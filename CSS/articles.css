@@ -1,0 +1,103 @@
+.delete {
+	color: red;
+}
+
+.article > *:nth-child(2) {
+	margin-left: auto;
+}
+
+#container {
+	width: 75%;
+	outline-style: double;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../Img/background.avif);
+	background-position: center;
+	background-size: cover;
+}
+
+#article-list {
+	height: 350px;
+}
+
+#dialog {
+	top: 250px;
+	text-align: center;
+	background-color: lightblue;
+}
+
+#dialog div {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+	
+#pagination {
+	display: flex;
+	height: 75px;
+	align-items: center;
+}
+
+#page-left {
+	display: flex;
+	width: 45%;
+}
+
+#page-left div {
+	width: 150px;
+}
+
+#page-left > *:nth-child(1) {
+    margin-left: 20px;
+	margin-right: 20px;
+}
+
+#page-middle {
+	width: 10%;
+	text-align: center;
+}
+
+#page-right {
+	margin-left: auto;
+	margin-right: 20px;
+}
+
+body {
+	font-family: Cursive;
+	font-size: 20px;
+}
+
+button {
+	width: 150px;
+	height: 55px;
+	background-color: white; 
+	font-size: 18px;
+}
+
+h1 {
+	padding-top: 40px; 
+	padding-left: 40px; 
+}
+
+hr {
+	width: 95%;
+}
+
+li {	
+	height: 35px;
+	align-items: center;
+}
+
+li {
+	
+}
+
+a:link, a:visited {
+    color: blue;
+}
+
+a {
+	text-decoration: none;
+	margin-right: 50px;
+}
+
+

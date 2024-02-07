@@ -1,0 +1,76 @@
+#container {
+	width: 75%;
+	outline-style: double;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../Img/background.avif);
+	background-position: center;
+	background-size: cover;
+}
+
+#container form {
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#buttons {
+	display: flex;
+	padding-bottom: 30px;
+}
+
+#back, #save {
+	border: solid black 1px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#back  {
+	width: 250px;
+	background-color: white; 
+	margin-left: auto;
+}
+
+#save {
+	width: 100px;
+	background-color: lightgreen; 	
+	margin-right: auto;
+}
+
+#nameHeader {
+	padding-top: 40px;
+}
+
+#name {
+	width: 99%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+}
+
+#content {
+	padding-bottom: 25px;
+}
+
+body {
+	font-family: Cursive;
+	font-size: 20px;
+}
+
+textarea {
+	width: 99.5%;
+	max-width: 99.5%;
+	height: 250px;
+	font-size: 20px;
+}
+
+button {
+	font-size: 20px;
+}
+
+
+

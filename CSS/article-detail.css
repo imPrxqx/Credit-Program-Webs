@@ -1,0 +1,52 @@
+#container {
+	width: 75%;
+	outline-style: double;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../Img/background.avif);
+	background-position: center;
+	background-size: cover;
+}
+
+#container div {
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#buttons {
+	display: flex;
+	padding-bottom: 30px;
+}
+
+#back, #edit {
+	border: solid black 1px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#back  {
+	width: 250px;
+	background-color: white; 
+	margin-left: auto;
+}
+
+#edit {
+	width: 100px;
+	background-color: lightgreen; 	
+	margin-right: auto;
+}
+
+body {
+	font-family: Cursive;
+	font-size: 20px;
+}
+
+h1 {	
+	padding-top: 40px; 
+}
+
+
