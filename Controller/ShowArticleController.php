@@ -52,11 +52,17 @@ class ShowArticlesController {
 	}
 	
 	private function deleteArticle($id) {
-
+		
+		if(!is_numeric($id)) {
+			http_response_code(403);
+			exit;
+		}
+		
 		$articleData = $this->articleModel->getArticle($id);
 
 		if($articleData === null) {
-			$this->articleView->renderView("error", "404 - Neexistující url - Pokus o smazání se nepovedl", "error", 404);
+			http_response_code(404);
+			exit;
 		} 	
 		
 		$this->articleModel->deleteArticle($id);	
