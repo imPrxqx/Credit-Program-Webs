@@ -6,4 +6,3 @@ $db_config = [
   'password' => '',
   'database' => '',
 ];
-

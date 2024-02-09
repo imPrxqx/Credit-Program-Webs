@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../CSS/articles.css">
+		<link rel="stylesheet" href="./CSS/articles.css">
 		<title>Article List</title>
 		<script src="./Javascript/articles.js" defer></script>
 	</head>
@@ -11,6 +11,9 @@
 		<div id="container">	
 			<div>
 				<h1>Article List</h1>
+				<br>
+				<label id="Fav">Favorites:</label>
+				<input type="checkbox" id="allFavorites">
 			</div>
 			
 			<div>
@@ -27,6 +30,7 @@
 							echo '<p>' . htmlspecialchars($article->name) . '</p>';
 							echo '</div>';
 							echo '<div>';
+							echo '<input class="listFavorite" type="checkbox" value="' .  htmlspecialchars($article->id) . '">';
 							echo '<a href="./article/' . htmlspecialchars($article->id) . '">Show</a>';
 							echo '<a href="./article-edit/' . htmlspecialchars($article->id) . '">Edit</a>';
 							echo '<a class="delete">Delete</a>';

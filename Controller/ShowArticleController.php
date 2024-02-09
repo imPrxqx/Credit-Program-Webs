@@ -41,12 +41,12 @@ class ShowArticlesController {
 		$name = $_POST['name'];
 		
 		if(iconv_strlen($name) > 32 || iconv_strlen($name) === 0) {
-			$this->articleView->renderView("error", "404 - Invalidni velikost názvu článku", "error", 404);
+			$this->articleView->renderView("error", "403 - Invalidni velikost názvu článku", "error", 403);
 		}
 		
 		$newId = $this->articleModel->createArticle($name);
 			
-		header('Location: ../article-edit/' . $newId);
+		header('Location: ./article-edit/' . $newId);
 		exit;
 		
 	}
@@ -57,12 +57,13 @@ class ShowArticlesController {
 			http_response_code(403);
 			exit;
 		}
-		
+
 		$articleData = $this->articleModel->getArticle($id);
 
-		if($articleData === null) {
+		if($articleData === null) {		
 			http_response_code(404);
 			exit;
+
 		} 	
 		
 		$this->articleModel->deleteArticle($id);	

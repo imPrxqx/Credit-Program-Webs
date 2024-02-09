@@ -24,6 +24,7 @@ if ($request_uri === 'articles') {
 	
 	require_once('View/ArticleView.php');
 	$articleView = new ArticleView();
-	$articleView->renderView("error", "403 - NOT FOUND PAGE!!!", "error", 403);
+	$articleView->renderView("error", "404 - NOT FOUND PAGE!!!", "error", 404);
 	
 }
+

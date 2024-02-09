@@ -29,7 +29,7 @@
 			
 			<div id="buttons">
 				<button type="submit" id="save">Save</button>
-				<a href="/articles" id="back">Back to Articles</a>
+				<a href="./../articles" id="back">Back to Articles</a>
 			</div>
 		</form>
     </div>

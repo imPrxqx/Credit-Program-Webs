@@ -1,9 +1,15 @@
+
+
 .delete {
 	color: red;
 }
 
 .article > *:nth-child(2) {
 	margin-left: auto;
+}
+
+#Fav {
+	margin-left: 15px;
 }
 
 #container {
@@ -99,5 +105,6 @@ a {
 	text-decoration: none;
 	margin-right: 50px;
 }
+
 
 
